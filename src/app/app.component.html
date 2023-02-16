@@ -1,14 +1,10 @@
 <div class="inputRow">
-    <label class="inputLabel">Global Excluded Letters (comma-separated):</label>
+    <label class="inputLabel">Excluded Letters (comma-separated):</label>
     <input class="inputValue globalExclude" [(ngModel)]="excludedLetters" />
 </div>
 <div class="inputRow">
-    <label class="inputLabel">Known Letters:</label>
-    <input class="inputValue" [(ngModel)]="knownLetterOne" />
-    <input class="inputValue" [(ngModel)]="knownLetterTwo" />
-    <input class="inputValue" [(ngModel)]="knownLetterThree" />
-    <input class="inputValue" [(ngModel)]="knownLetterFour" />
-    <input class="inputValue" [(ngModel)]="knownLetterFive" />
+    <label class="inputLabel">Non-repeated Letters: (comma-separated):</label>
+    <input class="inputValue globalExclude" [(ngModel)]="nonRepeatedLetters" />
 </div>
 <div class="inputRow">
     <label class="inputLabel">Misplaced Letters (comma-separated):</label>
@@ -17,6 +13,14 @@
     <input class="inputValue" [(ngModel)]="misplacedLetterThree" />
     <input class="inputValue" [(ngModel)]="misplacedLetterFour" />
     <input class="inputValue" [(ngModel)]="misplacedLetterFive" />
+</div>
+<div class="inputRow">
+    <label class="inputLabel">Known Letters:</label>
+    <input class="inputValue" [(ngModel)]="knownLetterOne" />
+    <input class="inputValue" [(ngModel)]="knownLetterTwo" />
+    <input class="inputValue" [(ngModel)]="knownLetterThree" />
+    <input class="inputValue" [(ngModel)]="knownLetterFour" />
+    <input class="inputValue" [(ngModel)]="knownLetterFive" />
 </div>
 <div class="buttonRow">
     <span class="spacer"></span>
