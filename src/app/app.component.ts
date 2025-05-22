@@ -1,11 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {FileReaderService} from './file-reader.service';
 import {RankedLetter} from './model/ranked-letter';
+import { FormsModule } from '@angular/forms';
+import { NgFor } from '@angular/common';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    styleUrls: ['./app.component.css'],
+    imports: [FormsModule, NgFor]
 })
 export class AppComponent implements OnInit {
 
